@@ -1,0 +1,22 @@
+name: Report a Broken Link
+description: Report a broken or outdated link in the list
+body:
+  - type: input
+    id: resource-name
+    attributes:
+      label: Resource Name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL
+    validations:
+      required: true
+  - type: textarea
+    id: error-description
+    attributes:
+      label: Error Description
+      placeholder: What happens when you visit the link?
+    validations:
+      required: true

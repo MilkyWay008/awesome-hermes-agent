@@ -1,0 +1,54 @@
+name: Add a Resource
+description: Suggest a resource for the Awesome Hermes Agent list
+body:
+  - type: input
+    id: resource-name
+    attributes:
+      label: Resource Name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Official Resources
+        - Models
+        - Deployment
+        - Skills
+        - Memory and Personality
+        - Training and Research
+        - Showcase Projects
+        - Tutorials and Guides
+        - Community
+    validations:
+      required: true
+  - type: dropdown
+    id: maturity
+    attributes:
+      label: Maturity Level
+      options:
+        - Production
+        - Beta
+        - Experimental
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: One sentence describing what makes this resource useful
+    validations:
+      required: true
+  - type: textarea
+    id: why-awesome
+    attributes:
+      label: Why is this resource awesome?
+    validations:
+      required: true
